@@ -1,0 +1,9 @@
+Bundle-Name: employee-service-api
+Bundle-SymbolicName: com.byteparity.emp.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.byteparity.emp.exception,\
+	com.byteparity.emp.model,\
+	com.byteparity.emp.service,\
+	com.byteparity.emp.service.persistence
+-includeresource: META-INF/service.xml=../employee-service-service/service.xml

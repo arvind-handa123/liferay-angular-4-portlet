@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.byteparity.emp.model.Employee">
+		<field name="uuid" type="String" />
+		<field name="empId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="firstName" type="String" />
+		<field name="lastName" type="String" />
+		<field name="city" type="String" />
+		<field name="dob" type="Date" />
+		<field name="contactNumber" type="String" />
+		<field name="organization" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

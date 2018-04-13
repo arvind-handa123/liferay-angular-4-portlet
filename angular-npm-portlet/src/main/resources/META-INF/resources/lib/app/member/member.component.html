@@ -1,0 +1,59 @@
+<form  #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="ui form" ngNativeValidate>
+	<div class="row" *ngIf="!emp.empId">
+		<input type="hidden" value="0" name="empId" ngModel="0"/>
+	</div>
+	<div class="row" *ngIf="emp.empId">
+		<input type="hidden" value="0" name="empId" [(ngModel)]="emp.empId"/>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<label>First Name</label>
+   			<input type="text" name="firstName" class="form-control" [(ngModel)]="emp.firstName" required>
+   		</div>
+		<div class="col-md-6">
+			<label>Last Name</label>
+    		<input type="text" name="lastName" class="form-control" [(ngModel)]="emp.lastName" required>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<label>City</label>
+			<select class="form-control" name="city" [(ngModel)]="emp.city" required>
+				<option value="Ahmedabad">Ahmedabad</option>
+				<option value="Baroda">Bhavnager</option>
+				<option value="Surat">Surat</option>
+				<option value="Rajkot">Rajkot</option>
+			 </select>
+		</div>
+		<div class="col-md-6">
+			<label>Date Of Birth</label>
+    		<input type="date" name="dob" class="form-control" [(ngModel)]="emp.dob" required>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<label>Organization</label>
+    		<input type="text" name="organization" class="form-control" [(ngModel)]="emp.organization" required>
+		</div>
+		<div class="col-md-6">
+			<label>Contact Number</label>
+    		<input type="text" name="contactNumber" class="form-control" [(ngModel)]="emp.contactNumber" required>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-2">
+			<input type="submit" name="submit" class="btn btn-primary btn-block">
+		</div>
+		<div class="col-md-2">
+			<input type="reset" name="reset" class="btn btn-default btn-block">
+		</div>
+			<div class="col-md-2">
+				<button (click)="cancelForm()" class="btn btn-danger btn-block">Cancel</button>
+			</div>
+		<div class="col-md-3"></div>
+	</div>
+</form>
+ 

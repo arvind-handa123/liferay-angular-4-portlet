@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="com.byteparity.emp.service.impl.EmployeeLocalServiceImpl" id="com.byteparity.emp.service.EmployeeLocalService" />
+	<bean class="com.byteparity.emp.service.impl.EmployeeServiceImpl" id="com.byteparity.emp.service.EmployeeService" />
+	<bean class="com.byteparity.emp.service.persistence.impl.EmployeePersistenceImpl" id="com.byteparity.emp.service.persistence.EmployeePersistence" parent="basePersistence" />
+</beans>

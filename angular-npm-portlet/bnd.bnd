@@ -1,0 +1,4 @@
+Bundle-Name: com.byteparity.npm.angular.portlet
+Bundle-SymbolicName: com.byteparity.npm.angular.portlet
+Bundle-Version: 1.0.0
+Web-ContextPath: /angular-npm-portlet
