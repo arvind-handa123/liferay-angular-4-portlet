@@ -1,1 +1,1 @@
-# liferay-7-angular-4-portlet
+# liferay-angular-4-portlet
